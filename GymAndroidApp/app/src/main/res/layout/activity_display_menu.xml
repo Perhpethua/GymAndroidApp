@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              tools:context="c.b.a.gymfit.DisplayMenuActivity"
+              android:background="#FFE87C"
+              android:id="@+id/opcije">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFE87C"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/zagrijavanje_button"
+            android:id="@+id/zagrijavanjeButton"
+            android:layout_alignParentStart="true"
+            android:onClick="zagrijavanjeButton"
+            android:background="#FA8258"
+            android:layout_marginBottom="@dimen/padding_opcije"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kardio_button"
+            android:id="@+id/kardioButton"
+            android:layout_below="@+id/zagrijavanjeButton"
+            android:layout_alignParentStart="true"
+            android:onClick="kardioButton"
+            android:background="#FA8258"
+            android:layout_marginBottom="@dimen/padding_opcije"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ruke_button"
+            android:id="@+id/rukeButton"
+            android:layout_below="@+id/gornjiDioButton"
+            android:layout_alignParentStart="true"
+            android:onClick="rukeButton"
+            android:background="#FA8258"
+            android:layout_marginBottom="@dimen/padding_opcije"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noge_button"
+            android:id="@+id/nogeButton"
+            android:layout_below="@+id/rukeButton"
+            android:layout_alignParentStart="true"
+            android:onClick="nogeButton"
+            android:background="#FA8258"
+            android:layout_marginBottom="@dimen/padding_opcije"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/trup_button"
+            android:id="@+id/trupButton"
+            android:layout_below="@+id/nogeButton"
+            android:layout_alignParentStart="true"
+            android:onClick="trupButton"
+            android:background="#FA8258"
+            android:layout_marginBottom="@dimen/padding_opcije"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gornji_dio_button"
+            android:id="@+id/gornjiDioButton"
+            android:layout_below="@+id/kardioButton"
+            android:layout_alignParentStart="true"
+            android:onClick="gornjiDioButton"
+            android:background="#FA8258"
+            android:layout_marginBottom="@dimen/padding_opcije"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/slikaImageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/gym"/>
+    </LinearLayout>
+</LinearLayout>

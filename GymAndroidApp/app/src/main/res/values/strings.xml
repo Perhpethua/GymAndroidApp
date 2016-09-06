@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">GymSeminarJava</string>
+
+    <string name="visina_text_view">VISINA:</string>
+    <string name="tezina_text_view">TEŽINA:</string>
+    <string name="godine_text_view">GODINE:</string>
+    <string name="dalje_button">Kreni</string>
+    <string name="action_settings"></string>
+    <string name="title_activity_display_menu">OPTION MENU</string>
+    <string name="izracunaj_button">IZRACUNAJ BMI</string>
+    <string name="BMI_text_view">0</string>
+    <string name="BMI_normal_status_text_view">Normal</string>
+    <string name="hello_world">Join the club!</string>
+    <!--title_activity_display_menu je iz AndroidManifest.xml-->
+
+    <string name="zagrijavanje_button">Zagrijavanje</string>
+    <string name="kardio_button">Kardio</string>
+    <string name="gornji_dio_button">Štoperica</string>
+    <string name="ruke_button">Ruke</string>
+    <string name="noge_button">Noge</string>
+    <string name="trup_button">Trup</string>
+    <string name="title_activity_zagrijavanje">ZAGRIJAVANJE</string>
+    <string name="title_activity_kardio">KARDIO</string>
+    <string name="title_activity_gornji_dio">ŠTOPERICA</string>
+    <string name="title_activity_ruke">RUKE</string>
+    <string name="title_activity_noge">NOGE</string>
+    <string name="title_activity_trup">TRUP</string>
+    <string name="json_button">Json</string>
+
+    <string name="start_chronometer_button">Start</string>
+    <string name="pause_chronometer_button">Pause</string>
+    <string name="reset_chronometer_button">Reset</string>
+
+</resources>

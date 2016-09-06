@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+                android:background="#FFE87C"
+                android:focusable="true"
+   >
+
+    <TextView
+        android:id="@+id/visinaTextView"
+        android:text="@string/visina_text_view"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="@dimen/font_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/godineTextView"/>
+    <TextView
+        android:id="@+id/tezinaTextView"
+        android:text="@string/tezina_text_view"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visinaEditText"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:textSize="@dimen/font_size"/>
+
+    <EditText
+        android:id="@+id/visinaEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:inputType="numberDecimal"
+        android:ems="7"
+        android:background="#fff8f8"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/visinaTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:elegantTextHeight="false"
+        android:textSize="@dimen/font_size"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:inputType="numberDecimal"
+        android:ems="7"
+        android:id="@+id/tezinaEditText"
+        android:background="#fff8f8"
+        android:textAlignment="center"
+        android:layout_below="@+id/tezinaTextView"
+        android:layout_alignStart="@+id/visinaEditText"
+        android:layout_weight="1"
+        android:textSize="@dimen/font_size"/>
+
+    <Button
+        android:id="@+id/daljeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="@string/dalje_button"
+        android:textStyle="bold"
+        android:background="#FA8258"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="kreniButton"
+        />
+
+    <TextView
+        android:id="@+id/godineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/godine_text_view"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_below="@+id/tezinaEditText"
+        android:layout_alignEnd="@+id/tezinaTextView"
+        android:textSize="@dimen/font_size"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:inputType="number"
+        android:ems="7"
+        android:id="@+id/godineEditText"
+        android:background="#fff8f8"
+        android:textAlignment="center"
+        android:layout_below="@+id/godineTextView"
+        android:layout_alignStart="@+id/tezinaEditText"
+        android:layout_weight="1"
+        android:textSize="@dimen/font_size"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/izracunaj_button"
+        android:id="@+id/izracunajBMIButton"
+        android:layout_below="@+id/godineEditText"
+        android:layout_centerHorizontal="true"
+        android:background="#FA8258"
+        android:onClick="izracunajBMI"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BMI_text_view"
+        android:id="@+id/BMITextView"
+        android:background="#fff8f8"
+        android:textSize="@dimen/BMI_size"
+        android:layout_below="@+id/izracunajBMIButton"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_alignStart="@+id/godineEditText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BMI_normal_status_text_view"
+        android:textSize="20dp"
+        android:id="@+id/BMIStatusTextView"
+        android:layout_alignBottom="@+id/BMITextView"
+        android:layout_alignEnd="@+id/daljeButton"
+        android:layout_toEndOf="@+id/visinaTextView"/>
+
+    />
+
+</RelativeLayout>
